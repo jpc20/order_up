@@ -1,0 +1,5 @@
+<h1> <%= @chef.name %> </h1>
+
+<h2>
+  <%= link_to "Ingredients used by #{@chef.name}", "/chefs/#{@chef.id}/ingredients" %>
+</h2>
