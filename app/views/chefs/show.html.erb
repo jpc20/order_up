@@ -5,7 +5,8 @@
 </h2>
 
 
-<section class="most-popluar-ingredients">
+<section class="most-popular-ingredients">
+  <h3>Most Popular Ingredients:</h3>
   <% @chef.most_popluar_ingredients.each do |ingredient| %>
     <p><%= ingredient.name %></p>
   <% end %>
