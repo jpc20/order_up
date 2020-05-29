@@ -21,6 +21,8 @@ RSpec.describe "Dish Show page" do
       expect(page).to have_content(@ingredient1.name)
       expect(page).to have_content(@ingredient2.name)
       expect(page).to have_content(@ingredient3.name)
+      expect(page).to_not have_content(@ingredient4.name)
+      expect(page).to_not have_content(@ingredient5.name)
     end
     expect(page).to have_content(@chef.name)
   end
