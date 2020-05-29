@@ -1,11 +1,9 @@
 <h1>
-  <%= "Ingredients used by #{@chef.name}" if @chef %>
+  <%= "Ingredients used by #{@chef.name}"%>
 </h1>
 
 <section class="ingredients">
-  <% if @chef %>
-    <% @chef.ingredients.each do |ingredient| %>
-      <p><%= ingredient.name %></p>
-    <% end %>
+  <% @chef.ingredients.each do |ingredient| %>
+    <p><%= ingredient.name %></p>
   <% end %>
 </section>

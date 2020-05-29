@@ -55,8 +55,9 @@ RSpec.describe "Chef Show page" do
     within ".most-popular-ingredients" do
       expect("#{@ingredient4.name}").to appear_before("#{@ingredient2.name}")
       expect("#{@ingredient2.name}").to appear_before("#{@ingredient1.name}")
-      expect("#{@ingredient1.name}").to appear_before("#{@ingredient3.name}")
-      expect("#{@ingredient3.name}").to appear_before("#{@ingredient5.name}")
+
+      expect(page).to_not have_content(@ingredient5.name)
+      expect(page).to_not have_content(@ingredient3.name)
       expect(page).to_not have_content(@ingredient6.name)
       expect(page).to_not have_content(@ingredient7.name)
     end

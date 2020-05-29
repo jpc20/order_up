@@ -3,3 +3,10 @@
 <h2>
   <%= link_to "Ingredients used by #{@chef.name}", "/chefs/#{@chef.id}/ingredients" %>
 </h2>
+
+
+<section class="most-popluar-ingredients">
+  <% @chef.most_popluar_ingredients.each do |ingredient| %>
+    <p><%= ingredient.name %></p>
+  <% end %>
+</section>
