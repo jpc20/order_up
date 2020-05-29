@@ -14,6 +14,7 @@ RSpec.describe "Chef Show page" do
     DishIngredient.create(dish_id: @dish.id, ingredient_id: @ingredient1.id)
     DishIngredient.create(dish_id: @dish.id, ingredient_id: @ingredient2.id)
     DishIngredient.create(dish_id: @dish.id, ingredient_id: @ingredient3.id)
+    DishIngredient.create(dish_id: @dish.id, ingredient_id: @ingredient4.id)
   end
 
   it "text" do
